@@ -3,7 +3,7 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Meet - King Bonhuer</title>
+     <title>Meet - King Bonheur</title>
      <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.css">
      <link rel="stylesheet" href="style.css">
 </head>
@@ -11,12 +11,12 @@
      <div class="container">
           <nav id="header">
                <div class="nav-logo">
-                    <p class="nav-name">AZ</p>
+                    <p class="nav-name">KBHub</p>
                </div>
                <div class="nav-menu" id="myNavMenu">
                     <ul class="nav_menu_list">
                          <li class="nav_list">
-                              <a href="#home" class="nav-link active-link">Home</a>
+                              <a href="#home" class="nav-link">Home</a>
                               <div class="circle"></div>
                          </li>
                          <li class="nav_list">
@@ -39,7 +39,7 @@
                          <i class="fa fa-sun-o" id="sun"></i>
                     </div>
                     <div class="nav-menu-btn">
-                         <i class="fa fa-list-alt" onclick="myMenuFunction()"></i>
+                         <i class="fa fa-bars" onclick="myMenuFunction()"></i>
                     </div>
                </div>
           </nav>
@@ -50,21 +50,21 @@
                               <p>Hello I'm</p>
                          </div>
                          <div class="feature-name">
-                              <span class="typedText">Developer</span>
+                              <span class="typedText">King Bonheur</span>
                          </div>
                          <div class="text-info">
-                              <p>My name is King bonheur! I'm a web develop with 2+ years of experience.</p>
+                              <p>I'm a web developer and designer dedicated to creating innovation and user-friendly websites.</p>
                          </div>
                          <div class="text-btn">
-                              <button class="btn hire-btn">Hire me</button>
-                              <button class="btn">Download CV<i class="fa fa-download"></i></button>
+                              <a href="" class="btn hire-btn">Hire me</a>
+                              <a href="/ASSESTS/King bonheur(CV).pdf" download="King bonheur(CV).pdf" class="btn">Download CV<i class="fa fa-download"></i></a>
                          </div>
                          <div class="social_icons">
                               <div class="icon_circle"></div>
-                              <div class="icon"><i class="fa fa-instagram"></i></div>
-                              <div class="icon"><i class="fa fa-whatsapp"></i></div>
-                              <div class="icon"><i class="fa fa-facebook"></i></div>
-                              <div class="icon"><i class="fa fa-github"></i></div>
+                              <a href="https://www.instagram.com/king_bonheur_?igsh=cHlqd2J2dnJzdjI1" class="icon"><i class="fa fa-instagram"></i></a>
+                              <a href="https://wa.link/yjyhsl" class="icon"><i class="fa fa-whatsapp"></i></a>
+                              <a href="" class="icon"><i class="fa fa-facebook"></i></a>
+                              <a href="" class="icon"><i class="fa fa-github"></i></a>
                          </div>
                     </div>
                     <div class="feature-image">
@@ -83,10 +83,10 @@
                                    <figure class="about-me">
                                         <figcaption>
                                              <img src="/ASSESTS/FBW.png" alt="" class="profile" />
-                                             <h2>Web developer</h2>
-                                             <p>My name is King bonheur! I'm a web developer with 2+ years of experience.</p>
+                                             <h2>King Bonheur</h2>
+                                             <p>I'm web developer and designer with strong background in building responsive visually appealing websites and user interface with 2+ years of experience.</p>
                                    </figure>
-                                   <button class="about-me-btn">Hire me</button>
+                                   <a href="" class="about-me-btn">Hire me</a>
                               </div>
                          </div>
                          <div class="skill">
@@ -161,21 +161,24 @@
                                    <p><i class="fa fa-phone"></i>Phone: +250794038238</p>
                          </div>
                          </div>
+                         
                          <div class="col">
+                              <form onsubmit="sendEmail(); reset(); return false">
                               <div class="form-control">
                                    <div class="form-input">
-                                        <input type="text" class="input-field" placeholder="Your Name">
-                                        <input type="email" class="input-field" placeholder="Your Email">
+                                        <input type="text" id="name" class="input-field" placeholder="Your Name" required>
+                                        <input type="email" id="email" class="input-field" placeholder="Your Email" required>
                                    </div>
                                    <div class="text-area">
-                                        <input type="text" class="input-subject" placeholder="subject">
-                                        <textarea placeholder="Message..."></textarea>
+                                        <input type="text" id="subject" class="input-subject" placeholder="subject" required>
+                                        <textarea placeholder="Message..." id="message" required></textarea>
                                    </div>
                                    <div class="form-button">
-                                        <button class="btn">Send<i class="fa fa-send"></i></button>
+                                        <button type="submit" class="btn">Send<i class="fa fa-send"></i></button>
                                    </div>
                               </div>
-                         </div>
+                         </form>
+                         </div> 
                     </div>
                </section>
           </main>
@@ -203,10 +206,11 @@
                     <div class="icon"><i class="fa fa-github"></i></div>
                </div>
                <div class="buttom-footer">
-                    <p>copyright &copy; <a href="#home" style="text-decoration: none;">AZ PROGRAMMER</a> - All rights reserved 2024</p>
+                    <p>copyright &copy; <a href="#home" style="text-decoration: none;">KB PROGRAMMER</a> - All rights reserved 2024</p>
                </div>
           </footer>
      </div>
+     <script src="http://smtpjs.com/v3/smtpjs.js"></script>
      <script src="script.js"></script>
 </body>
 </html>

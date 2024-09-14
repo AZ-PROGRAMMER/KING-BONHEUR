@@ -15,26 +15,16 @@ toggleSwitch.addEventListener("click", ()=> {
      body.classList.toggle("dark")
 });
 
-const section = document.querySelectorAll(".section[id]");
- 
-function srcollActive(){
-     const scrollY = Window.scrollY;
-      
-     section.forEach((current) => {
-          const sectionHeight = current.offsetHeight,
-          sectionTop = current.offsetTop - 50,
-          sectionId = current.getAttribute("id");
-
-          if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-          document
-          .querySelector(".nav-menu a[href*=" +sectionId + "]")
-          .classList.add(".active-link");
-          } else {
-               document
-               .querySelector(".nav-menu a[href*=" +sectionId + "]")
-               .classList.remove(".active-link");
-          }
-     });
+function sendEmail(){
+     Email.send({
+          Host : "",
+          Username : "",
+          Password : "",
+          To :"",
+          Form : "",
+          Subject : "",
+          Body : ""
+     }).then(
+          message => alert(message)
+     );
 }
-
-window.addEventListener("scroll", srcollActive);
