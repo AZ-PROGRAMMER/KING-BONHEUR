@@ -17,14 +17,14 @@ toggleSwitch.addEventListener("click", ()=> {
 
 function sendEmail(){
      Email.send({
-          Host : "",
-          Username : "",
-          Password : "",
-          To :"",
-          Form : "",
-          Subject : "",
-          Body : ""
-     }).then(
-          message => alert(message)
-     );
+          Host : "smtp.elasticemail.com",
+          Username : "kingbonheur46@gmail.com",
+          Password : "58D88AE5BDCFE756E75A61125334E2B0FA50",
+          To : 'kingbonheur46@gmail.com',
+          From : "you@isp.com",
+          Subject : "This is the subject",
+          Body : "And this is the body"
+      }).then(
+        message => alert(message)
+      );
 }
