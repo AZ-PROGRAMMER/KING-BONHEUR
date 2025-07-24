@@ -264,10 +264,9 @@ i{
      width: 100%;
  }
  .image{
-     margin: 10%;
+     margin: 0;
      width: 500px;
      height: 700px;
-     border-radius: 40% 40% 40% 40%;
      overflow: hidden;
      animation: imgFloat 5s ease-in-out infinite;
  }
@@ -278,7 +277,7 @@ i{
  }
  @keyframes imgFloat {
      50%{
-          transform: translateY(50px);
+          transform: rotateZ(10deg);
      }
  }
  .section{
@@ -395,7 +394,7 @@ i{
 }
 .skill-per.html{
      animation-delay: 0.1s;
-     width: 85%;
+     width: 95%;
 }
 .skill-per.css{
      animation-delay: 0.1s;
@@ -403,11 +402,19 @@ i{
 }
 .skill-per.javascript{
      animation-delay: 0.1s;
-     width: 70%;
+     width: 87%;
 }
 .skill-per.node{
      animation-delay: 0.1s;
+     width: 80%;
+}
+.skill-per.react{
+     animation-delay: 0.1s;
      width: 45%;
+}
+.skill-per.mysql{
+     animation-delay: 0.1s;
+     width: 86%;
 }
 @keyframes progress{
      0%{
@@ -619,8 +626,8 @@ footer{
      }
      .image,
      image img {
-          width: 320px;
-          height: 320px;
+          /* width: 320px;
+          height: 320px; */
      }
 }
 @media only screen and (max-width: 900px){
@@ -671,14 +678,14 @@ footer{
      .feature-image{
           order: 1;
           justify-content: center;
-          min-height: 150px;
+          min-height: 250px;
           width: 100%;
-          margin-top: 65px;
+          margin-top: 150px;
      }
      .image,
      .image img{
           width: 150px;
-          height: 190px;
+          height: 250px;
      }
      .row{
           display: flex;
@@ -725,16 +732,3 @@ footer{
      }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
