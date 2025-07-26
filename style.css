@@ -101,7 +101,7 @@ nav{
      display: none;
 }
 .nav-menu-btn i {
-     font-size: 20px;
+     font-size: 35px;
      cursor: pointer;
      color: var(--nav-icon);
 }
@@ -666,6 +666,7 @@ footer{
           display: flex;
           align-items: center;
           justify-content: center;
+          
      }
      .feature-box{
           flex-direction: column;
@@ -687,12 +688,12 @@ footer{
           justify-content: center;
           min-height: 250px;
           width: 100%;
-          margin-top: 100px;
+          /* margin-top: 70px; */
      }
      .image,
      .image img{
-          width: 150px;
-          height: 250px;
+          width: 105px;
+          height: 155px;
      }
      .row{
           display: flex;
@@ -720,6 +721,7 @@ footer{
      .mode{
           display: flex;
           align-items: center;
+          gap: 12px;
           margin-left: 60%;
      }
 }
